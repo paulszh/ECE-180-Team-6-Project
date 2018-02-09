@@ -1,4 +1,4 @@
-ECE 180 Team 6 Project Proposal: San Diego Real Estate Price Analysis
+# ECE 180 Team 6 Project Proposal: San Diego Real Estate Price Analysis
 
 ## Purpose: 
 The purpose of our project is to use the historical home/rent prices near the La Jolla area to determine which neighborhoods are the most in demand and how fair a listing price is. As a result, UCSD students and faculty will have a useful guide to help them to make better decisions when it comes to finding off-campus housing. In addition, we hope our analysis will also give the current homeowners a more robust understanding of how much their property is worth and what are the main factors which contribute to that.
