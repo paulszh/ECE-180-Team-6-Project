@@ -8,14 +8,21 @@ Due to limited on-campus apartment spaces and high rent, each year, thousands of
 ## Data Acquisition/Analysis: 
 Zillow is a very well-known real estate database company, and so the historical data on their website will be the primary source of data for our project. We will need to install the OpenPyXL module in Python in order to read the Excel spreadsheets. In addition, for any data scraping from other sources, we may also use the Lxml and BeautifulSoup modules as well. We will eventually use NumPy to help organize and format the data, and Matplotlib to create the visual plots.
 
+## Software package used: 
+* Python 2.7
+* Matplotlib
+* Pandas
+* gmplot
+* Numpy
+* Seaborn
 
 ## Timeline:
 |Week:| Task: | Assigned Members |
 |:--|:--|:--|
-|2/8 - 2/12 | Find topic & collect data| All| 
+|2/8 - 2/12 | Decide the topic & collect data| All| 
 |2/12 - 2/19|  Data cleaning and formatting| Gilbert/Jiang/Jinzhao|
 |2/19 - 3/1| Analyze data based on time/features| All|
 |3/1 - 3/8|Generate data visualization plots|Jiyang/Shuai/Zhengfang/Zhouhang|
-|3/8 - pres. date|repare for presentation|All|
+|3/8 | In Class Presentation|All|
 
 
