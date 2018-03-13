@@ -92,15 +92,14 @@ def form_list(keys, content):
     :type  content: a list of lists
     '''
     assert isinstance(keys, list)
-    assert len(keys) == 75
     for i in keys:
-	assert isinstance(i, str)
+        assert isinstance(i, str)
     assert isinstance(content, list)
     assert len(content) > 0
     for i in content:
-	assert isinstance(i, list)
-	assert len(i) > 0
-
+        assert isinstance(i, list)
+        assert len(i) > 0
+	
     ls = []
     for line in content:
         temp= {}
@@ -124,12 +123,12 @@ def preprocess_data(keys, datafiles):
     '''	
     assert isinstance(keys, list)
     assert len(keys) > 0
-    for i in keys:                                                              
-	assert isinstance(i, str) 
+    for i in keys:
+        assert isinstance(i, str) 
     assert isinstance(datafiles, dict)
     for i in datafiles:                                                              
-        assert isinstance(datafiles[i], list) 
-	assert len(datafiles[i]) > 0
+        assert isinstance(datafiles[i], list)
+        assert len(datafiles[i]) > 0
 
     dataset = {}
     for i in datafiles:
@@ -152,8 +151,8 @@ def astype_float(dataset, months):
     '''	
     assert isinstance(dataset, dict)
     for i in dataset:
-	assert isinstance(i, list)
-	assert len(i) > 0
+        assert isinstance(dataset[i], list)
+        assert len(dataset[i]) > 0
     assert isinstance(months, list)
     assert len(months) == 70
 	
@@ -186,12 +185,12 @@ def get_data(category, dataset, s = sources):
     assert isinstance(s, list)
     assert len(s) > 0	
     assert isinstance(category, str)                                                  
-    assert len(category > 0
+    assert len(category) > 0
     assert isinstance(dataset, dict)
     assert len(dataset) > 0
     for i in dataset:                                                           
-        assert isinstance(i, list)                                              
-        assert len(i) > 0 
+        assert isinstance(dataset[i], list)                                              
+        assert len(dataset[i]) > 0 
 	
     if category == 'zip_rent':
         return dataset[s[1]]
@@ -220,8 +219,8 @@ def calc_average(name, dataset, m = months, excludes = 'San Diego'):
     assert len(name) > 0 
     assert len(dataset) > 0                                                     
     for i in dataset:                                                           
-        assert isinstance(i, list)                                              
-        assert len(i) > 0    
+        assert isinstance(dataset[i], list)                                              
+        assert len(dataset[i]) > 0    
     assert isinstance(m, list)
     assert len(m) > 0
     assert isinstance(excludes, str)
@@ -260,8 +259,8 @@ def get_plotdata(name, county, dataset, selection_zip = sd):
     assert len(county) > 0
     assert len(dataset) > 0                                                     
     for i in dataset:                                                           
-        assert isinstance(i, list)                                              
-        assert len(i) > 0 
+        assert isinstance(dataset[i], list)                                              
+        assert len(dataset[i]) > 0 
     assert isinstance(selection_zip, list)
     assert len(selection_zip) > 0
 
@@ -298,7 +297,7 @@ def plot_month_price(name, target_areas, target_months, target_index, month_aver
     assert isinstance(target_index, list) 
     assert isinstance(target_months, list) 
     assert isinstance(m, list) 
-    assert len(m) > 0 && len(month_average) > 0
+    assert len(m) > 0 and len(month_average) > 0
 
     plt.title('average %s with months in cities in USA vs. San Diego'%name)
     r = month_average
@@ -330,7 +329,7 @@ counties =  list(set([d['CountyName'] for d in data]))
 
 new_data=[]
 for i in counties:
-	temp = [d for d in data if d['CountyName'] == i]
+    temp = [d for d in data if d['CountyName'] == i]
     rent = sum([d[months[-1]] for d in temp])/len(temp)
     new_data.append({'CountyName': i, 'Rent': rent})
 
