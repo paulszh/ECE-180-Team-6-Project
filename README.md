@@ -12,7 +12,9 @@ All the code are allocated in Code Directory. You can run the code using
 ``
 python filename.py
 ``
-We have included all our plots in the plot folder. Our Pre
+After each run, all the new plots will be generated at the visualization folder under the 'Code' directory
+
+For your convenience, we have included all our generated plots in the 'Plot' folder. Our Presentaion slide is also included to help you better understand our project and all our graph plots.
 
 ## Software package used: 
 * Python 2.7
