@@ -38,6 +38,4 @@ A12828332 Gilbert Zhou
 A53210993 Zhengfang gao
 A13534903 Shuai Huang
 A53218851 Jiang Yu
-yiyang zhao
 
-## How to run the code: yang 
