@@ -173,7 +173,7 @@ axes[2].set_title('Three Bedroom Median Rent Prices')
 axes[3].set_title('Condo Median Rent Prices')
 
 plotdata(dflist)
-fig.savefig('../Visualization/median_price_comparsion_for_each_bedroom_in_various_zipcode')
+fig.savefig('./Visualization/median_price_comparsion_for_each_bedroom_in_various_zipcode')
 
 #plot a vertical bar plot to show rental price different across zipcodes
 df_date = filter_data_by_date('../Data/rent_all.csv', '2017-01')
@@ -198,7 +198,7 @@ ax.set_ylim(-0.5,45.5)
 ax.set_xlim(0,4.0)
 ax.legend()
 # plt.show()
-fig.savefig('../Visualization/median_price_comparsion_for_each_zipcode_barplot')
+fig.savefig('./Visualization/median_price_comparsion_for_each_zipcode_barplot')
 
 
 # Explore the price for La Jolla 92037 for different rooms
@@ -225,8 +225,9 @@ plt.legend(loc = 'upper left')
 
 plt.grid(True)
 plt.xticks(rotation=45)
+plt.title('median price per square for different kinds of bedroom in 92037')
 plt.ylabel(u'price per square feet')
-fig.savefig('../Visualization/median_price_comparsion_for_each_bedroom_in_92037')
+fig.savefig('./Visualization/median_price_comparsion_for_each_bedroom_in_92037')
 
 
 # Explore the price for La Jolla 92109 for different rooms
@@ -250,8 +251,8 @@ line2, = plt.plot(months, data2,color = 'g',label = '2 Bedroom')
 line2, = plt.plot(months, data3,color = 'r',label = '3 Bedroom')
 line2, = plt.plot(months, data4,color = 'm',label = 'Condo')
 plt.legend(loc = 'upper left')
-
+plt.title('median price per square for different kinds of bedroom in 92109')
 plt.grid(True)
 plt.xticks(rotation=45)
 plt.ylabel(u'price per square feet')
-fig.savefig('../Visualization/median_price_comparsion_for_each_bedroom_in_92109')
+fig.savefig('./Visualization/median_price_comparsion_for_each_bedroom_in_92109')
